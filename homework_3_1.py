@@ -39,11 +39,16 @@ print(result_3)
 
 
 # Enter a number between 10 and 20 (inclusive) and save number to number_2 variable
-# If they enter a number within this range, save a message “Thank you” to result_4, otherwise a
+# If they enter a number within this range, save a message “Thank you” to result_4,
+# otherwise a
 # message “Incorrect answer” to result_4.
 
-number_2 = None
-result_4 = None
+number_2 = int(input("number between 10 and 20 inclusive: "))
+if  10 <= number_2 <= 20:
+    result_4 = "thank you"
+else:
+    result_4 = "Incorrect answer"
+print(f"result 4= {result_4}")
 
 
 # Enter your age. If you are 18 or over, save the message “You can vote” in result_5,
@@ -51,13 +56,48 @@ result_4 = None
 # if you are 16, save the message “You can buy a lottery ticket” in result_5,
 # if you are under 16, save the message “You can go Trick-or-Treating” in result_5 variable.
 
-age = None
-result_5 = None
+age = int(input("age: "))
+if age >=18:
+    result_5 = "You can vote"
+elif age== 17:
+    result_5 = "You can learn to drive"
+elif age== 16:
+    result_5 = "You can buy a lottery ticket"
+else:
+    result_5 = "You can go trick-or-treating"
+print(f"at your age {result_5}")
+
 
 
 # Enter a number between 1 and 12, save this value to month variable. Find which month is it.
 # (January, February, March, April, May, June, Jule, August, September, October, November, December)
 # Write answer in result_month in lower case
 
-month = None
-result_month = None
+month = int(input("What number month is it?"))
+if month == 1:
+    result_month = "janurary"
+elif month == 2:
+    result_month = "feburary"
+elif month == 3:
+    result_month = "march"
+elif month == 4:
+    result_month = "april"
+elif month == 5:
+    result_month = "may"
+elif month == 6:
+    result_month = "june"
+elif month == 7:
+    result_month = "july"
+elif month == 8:
+    result_month = "august"
+elif month == 9:
+    result_month = "september"
+elif month == 10:
+    result_month = "october"
+elif month == 11:
+    result_month = "november"
+elif month == 12:
+    result_month = "december"
+else:
+    result_month = "please input a valid number"
+print(f"the month is: {result_month}")
