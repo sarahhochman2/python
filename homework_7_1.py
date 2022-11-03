@@ -12,6 +12,8 @@ your_choice_country = 'Canada'
 def find_index_by_value(value1, tuple1):
     if value1 in tuple1:
         return tuple1.index(value1)
+    else:
+        return -1
 
 
 print(f"index of {your_choice_country} in {countries}\n"
@@ -29,9 +31,10 @@ your_choice_number = 7
 
 
 def find_value_by_index(index, tuple1):
-    if index <= len(tuple1):
+    if index < len(tuple1):
         return tuple1[index]
-
+    else:
+        return "no such index"
 
 print(f"The country at index {your_choice_number}\n"
       f" in tuple {countries}\n"
